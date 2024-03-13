@@ -1,0 +1,22 @@
+GeoDatbase:
+
+load():
+O(N + P): N is the number of lines in the file, P is the number of POIs
+Load goes through file line by line --> O(N)
+String parsing is performed on every line, but if string parsing is implemented efficiently comlexity should be constant time.
+Every POI is processed --> O(P)
+
+
+get_connected_points():
+O(1)
+Since geopoint_to_connected has a low load factor, getting the vector should be constant time.
+
+get_street_name():
+O(1)
+Since location_to_street has a low load factor, getting the string should be constant time.
+
+
+Router:
+
+route():
+I implemented an A* algorithm. The data structures I used include structs, priority queues, unordered sets, and vectors. Structs hold multiple data members, priority queues return items in order of a priority determined by a provided comparison function, unordered sets are hashmaps, and vectors are dynamic arrays.
